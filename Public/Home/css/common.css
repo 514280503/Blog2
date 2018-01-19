@@ -1,0 +1,182 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding:0;
+}
+.ui-button {
+    background:url(../img/button.png) !important;
+    border:none !important;
+    color:#fff !important;
+    height:35px !important;
+}
+.ui-button:hover {
+    background:url(../img/button_hover.png) !important;
+}
+#error {
+    background:url(../img/error.png) no-repeat 20px center;
+    font-size:14px;
+    font-weight:bold;
+    color:red;
+    line-height:20px;
+    text-indent:35px;
+}
+#loading {
+    background:url(../img/loading.gif) no-repeat 20px 65%;
+    font-size:14px;
+    font-weight:bold;
+    color:#666;
+    line-height:18px;
+    text-indent:40px;
+}
+body
+{
+    background:url(../img/weibo_bg.jpg);
+    height: 100%;
+    font-size:14px;
+    font-family: "微软雅黑";
+}
+ul,ol
+{
+    list-style: none;
+}
+.selected
+{
+    background: #333;
+}
+#header
+{
+    width:100%;
+    height: 42px;
+    background: url(../img/header_bg.png);
+    position: fixed;
+    top:0;
+}
+#header .header_main
+{
+    width: 960px;
+    height:42px;
+    margin:0 auto;
+}
+#header .header_main .logo
+{
+    width: 86px;
+    height:42px;
+    background: url(../img/weibo_logo.png) no-repeat center;
+    cursor: pointer;
+    float: left;
+}
+#header .nav
+{
+    float: left;
+    margin-left: 30px;
+}
+#header .person
+{
+    float: right;
+    color: #fff;
+}
+#header .app
+{
+    padding:0 12px;
+    position: relative;
+    cursor: pointer;
+}
+#header dl.list
+{
+    display: none;
+    width:100px;
+    background: #fff;
+    border: 1px solid #666;
+    border-top:none;
+    position: absolute;
+    top:42px;
+    left: -51px;
+}
+#header dl.list a
+{
+    height: 30px;
+    line-height: 30px;
+    font-size:13px;
+    color: #444;
+}
+#header dl.list a:hover
+{
+    background: #eee;
+}
+#header .search
+{
+    float: right;
+    padding:8px 30px 0 0;
+    position: relative;
+}
+#header .search input
+{
+    padding:5px;
+    color: #999;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    width: 200px;
+    height:16px;
+}
+#header .search a
+{
+    width:17px;
+    height:18px;
+    display: block;
+    background: url(../img/search_btn.png) no-repeat;
+    position: absolute;
+    top:13px;
+    right:38px;
+}
+#header ul li
+{
+    float: left;
+    height:42px;
+    line-height: 42px;
+}
+#header ul li a
+{
+    padding: 0 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+#header ul li a:hover
+{
+    background: #333;
+}
+#main
+{
+    width: 960px;
+    min-height: 800px;
+    margin:58px auto 0px;
+    background: #fff;
+    box-shadow:0 0 5px #ccc;
+
+}
+
+#scrollUp
+{
+    bottom:20px;
+    right:20px;
+    padding:0 20px;
+    height:38px;
+    widht:38px;
+    background:url(../img/top.png) no-repeat;
+}
+#footer
+{
+    width: 960px;
+    height: 40px;
+    line-height:40px;
+    margin:0 auto;
+}
+#footer .footer_left
+{
+    float: left;
+}
+#footer .footer_right
+{
+    float: right;
+}

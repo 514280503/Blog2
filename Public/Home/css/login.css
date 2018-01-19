@@ -1,0 +1,215 @@
+body
+{
+	margin:0;
+	padding:0;
+	height: 100%;
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+.header
+{
+	width:198px;
+	height:60px;
+	background:url(../img/logo.png) no-repeat;
+	margin:0 auto;
+	position:relative;
+	top:150px;
+}
+.main
+{
+	text-align:center;
+	top:200px;
+	position:relative;
+}
+
+.main input[type="text"],.main input[type='password']
+{
+	width:250px;
+	height:25px;
+	line-height:25px;
+	background:#000;
+	border:1px solid #d2d2d2;
+	color:#fff;
+	font-size:18px;
+	border-radius:3px;
+	margin-right:10px;
+	padding:12px;
+
+}
+.main input[type="submit"]
+{
+	width:150px;
+	height:50px;
+	position:relative;
+	font-size:24px;
+	background:url(../img/login_button.png);
+	color:#fff;
+	border:none;
+}
+.main input[type="submit"]:hover
+{
+	background:url(../img/login_button_hover.png);
+	cursor:pointer;
+}
+.main .bottom
+{
+	width:380px;
+	margin:0 auto;
+	text-align: right;
+	color: #fff;
+	padding: 10px;
+}
+.main .bottom a
+{
+	color: #eee;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
+	font-size: 16px;
+}
+.main .bottom a:hover
+{
+	cursor:pointer;
+	text-decoration: underline;
+}
+.footer
+{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	background:#000;
+	color: #eee;
+	position: absolute;
+	bottom: 0;
+	opacity: 0.5;
+}
+
+/**
+ * 自定义jQueryUI
+ */
+.ui-dialog
+{
+	padding:0 !important;
+	border:1px solid #ccc !important;
+	border-radius:0 !important;
+}
+.ui-dialog-titlebar
+{
+	padding:0 !important;
+	height:37px !important;
+	background: url(../img/ui_header_bg.png) !important;
+	border: none !important;
+	border-radius:0 !important;
+}
+.ui-dialog-title
+{
+	height:37px !important;
+	color: #fff !important;
+	line-height: 35px;
+	text-indent: 10px; 
+}
+.ui-dialog-content
+{
+	width: 100% !important;
+}
+.ui-dialog-buttonset button
+{
+	background: url(../img/button.png) !important;
+	border: none !important;
+	color: #fff !important;
+	height:35px !important;
+}
+.ui-dialog-buttonset button:hover
+{
+	background: url(../img/button_hover.png) !important;
+}
+
+#register input.text
+{
+	width: 270px;
+	height:25px;
+	padding:5px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	background:#fff;
+}
+#verify_register input.text
+{
+	width: 85px;
+	height:25px;
+	padding:5px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	background:#fff;
+}
+#verify_register a
+{
+	color:#360;
+	text-decoration: none;
+}
+#verify_register a:hover
+{
+	text-decoration:underline;
+}
+.verifyimg
+{
+	cursor: pointer;
+}
+ span.star
+{
+	color: red;
+}
+ span.succ
+{
+	width:28px;
+	height:20px;
+	display:inline-block;
+	background:url(../img/success.gif) no-repeat bottom;
+}
+ span.loading
+{
+	width:28px;
+	height:20px;
+	display:inline-block;
+	background:url(../img/loading_form.gif) no-repeat left 70%;
+}
+#register ol.register_error,#verify_register ol.verify_error
+{
+	margin:0;
+	padding:0 0 0 20px;
+	color:red;
+}
+#register ol.register_error li,#verify_register ol.verify_error li
+{
+	height:20px;
+}
+#loading
+{
+	min-height:0 !important;
+	background:url(../img/loading.gif) no-repeat 20px center;
+	font-weight:bold;
+	color: #666;
+	line-height:25px;
+	text-indent:40px;
+}
+
+#login span.username,#login span.password
+{
+	display: inline-block;
+	width: 290px;
+	position: relative;
+}
+#login span.username label.error,#login span.password label.error
+{
+	color: #f60;
+	position: absolute;
+	top: 17px;
+	right: 20px;
+}
+#login .auto
+{
+	color: #eee;
+	position: absolute;
+	top: 60px;
+	left: -100px;
+}
