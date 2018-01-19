@@ -1,0 +1,80 @@
+<extend name="Base/common"/>
+<block name="head">
+    <script type="text/javascript" src="__JS__/jquery.form.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.validate.js"></script>
+    <script type="text/javascript" src="__UPLOADIFY__/jquery.uploadify.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="__JS__/index.js"></script>
+
+    <link rel="stylesheet" href="__UPLOADIFY__/uploadify.css">
+    <link rel="stylesheet" href="__CSS__/index.css">
+</block>
+<block name="main">
+    <div class="main_left">
+        <div class="weibo_form">
+            <span class="left">和大家分享一点新鲜事吧？</span>
+            <span class="right weibo_num">可以输入<strong>140</strong>个字</span>
+            <textarea class="weibo_text" id="rl_exp_input"></textarea>
+            <input class="weibo_button" type="submit" value="发布">
+        </div>
+        <div class="weibo_content">
+            <ul>
+                <li><a href="javascript:void(0)" class="selected">我关注的<i class="nav_arrow"></i></a></li>
+                <li><a href="javascript:void(0)">互听的</a></li>
+            </ul>
+            <volist name="topicList" id="obj">
+            <dl class="weibo_content_data">
+                <dt><a href="javascript:void(0)">
+                    <empty name="obj.face">
+                    <img src="__IMG__/small_face.jpg" alt="">
+                    <else/>
+                    <img src="__ROOT__/{$obj.face}" alt="">
+                </empty>
+                </a></dt>
+                <dd>
+                    <h4><a href="javascript:void(0)">{$obj.username}</a></h4>
+                    <p>{$obj.content}{$obj.content_over}</p>
+                    <div class="footer">
+                        <span class="time">{$obj.time}</span>
+                        <span class="handler">赞(0) | 转播 | 评论 | 收藏</span>
+                    </div>
+                </dd>
+            </dl>
+            </volist>
+
+            <div id="loadmore" style="clear: both">加载更多 <img src="__IMG__/loadmore.gif" alt=""></div>
+            <!--无配图-->
+            <div id="ajax_html1" style="display:none;">
+                <dl class="weibo_content_data">
+                    <dt>
+                        <a href="javascript:void(0)">
+                        <empty name="smallFace">
+                            <img src="__IMG__/small_face.jpg" alt="">
+                            <else/>
+                            <img src="__ROOTZK__/{$smallFace}" alt="">
+                        </empty>
+                        </a>
+                    </dt>
+                    <dd>
+                        <h4><a href="javascript:void(0)">{:session('user_auth')['username']}</a></h4>
+                        <p>#内容#</p>
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转播 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="main_right">
+        <empty name="bigFace">
+            <img src="__IMG__/big.jpg" alt="" class="face">
+            <else/>
+            <img src="/{$bigFace}" alt="" class="face">
+        </empty>
+		<span class="user">
+			<a href="javascript:void(0)">{:session('user_auth')['username']}</a>
+		</span>
+    </div>
+</block>

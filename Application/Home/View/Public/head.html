@@ -1,0 +1,19 @@
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<script type="text/javascript" src="__JS__/jquery.ui.js"></script>
+<script type="text/javascript" src="__JS__/common.js"></script>
+<link rel="stylesheet" href="__CSS__/jquery.ui.css">
+<link rel="stylesheet" href="__CSS__/common.css">
+
+<block name="head"></block>
+<script type="text/javascript">
+    var ThinkPHP = {
+        'ROOT' : '__ROOTZK__',
+        'BIGFACE' : '{:session("user_auth")["face"]->big}',
+        'MODULE' : '__MODULE__',
+        'IMG' : '__PUBLIC__/{:MODULE_NAME}/img',
+        'FACEURL' : '{:U("File/face")}',
+        'INDEX' : '{:U("Index/index")}',
+        'UPLOADER' : '{:U("File/upload")}',
+        'UPLOADIFY' : '__UPLOADIFY__',
+    }
+</script>
