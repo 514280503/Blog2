@@ -1,0 +1,4 @@
+数据库名称 weibo 运行sql文件创建数据库
+数据库用户名 root 密码 root
+
+数据库配置路径 D:\TP3.2.3-jQueryui-weibo\Application\Common\Conf\config.php
